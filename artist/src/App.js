@@ -9,7 +9,7 @@ class Home extends Component {
     super(props)
 
     this.state ={
-      artists:[],
+      artists:'',
       isLoading:true
     }
   }
@@ -18,7 +18,7 @@ class Home extends Component {
  componentDidMount(){
 
   axios.get('http://localhost:3004/artists')
-  .then(res => this.setState({artists:res,
+  .then(res => this.setState({artists:res.data,
                               isLoading:false }))
   .catch(err => console.log(err))
 
@@ -27,28 +27,12 @@ class Home extends Component {
 
 
  render(){
-  console.log(this.state.artists.data)
+  console.log(this.state.artists,'data')
 
 
   return(
      <div>
-     {
-
-       this.state.isLoading == true ? (<div> Loading </div>) :(
-
-       this.state.artists.data.map(artist =>(
-        
-        <Artist key={artist.id} artist={artist}>
-
-          <h1>{artist.albums}</h1>
-
-        </Artist>
-
-
-
-       )))
-     }
-
+     
 
      </div>
   )
