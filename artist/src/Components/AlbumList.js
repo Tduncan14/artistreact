@@ -2,21 +2,30 @@ import React from 'react'
 
 
 
-const AlbumList = ({props}) =>{
+const AlbumList = ({albums}) =>{
 
 
 
 
 
 
+ const ShowList = (album) =>{
+
+    
 
 
+ 
+
+
+ }
+ 
 
  return (
-
-    <div>
-        hey from album
-    </div>
+    <>
+      {
+       ShowList(albums)
+      }
+    </>
  )
 
 
