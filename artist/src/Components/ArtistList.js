@@ -11,9 +11,8 @@ const ArtistList = ({artists}) => {
    const list = (artist) =>{
 
     artist ? artist.map(art => (
-
         <div>
-            
+          hey
         </div>
 
     )) : (
