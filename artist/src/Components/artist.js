@@ -18,7 +18,7 @@ class Artist extends Component {
 
       axios.get(`${url}/${this.props.match.params.id}`)
       .then(response =>
-        console.log(response.data))
+        this.setState({artist:response.data}))
       .catch(err => console.log(err))
 
      }
@@ -30,9 +30,19 @@ class Artist extends Component {
 
 
         return(
-            <div>
-                hello
-            </div>
+            <>
+             <div className="artist_bio">
+               <div className="avatar">
+                   <span style={{
+                    background:`url('/images/covers/${this.state.artist.cover}.jpg')no-repeat`
+                   }
+                   }>
+
+                   </span>
+               </div>
+             </div>
+
+            </>
         )
     }
      
