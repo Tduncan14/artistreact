@@ -1,6 +1,8 @@
 import React,{Component}  from 'react';
-import Artist from './Components/artist';
+import Artist from './Components/Artist';
 import axios from 'axios';
+import Header from './Components/Header'
+import Banner from './Components/Banner';
 
 
 class Home extends Component {
@@ -32,6 +34,8 @@ class Home extends Component {
 
   return(
      <div>
+       <Header />
+       <Banner />
      
 
      </div>

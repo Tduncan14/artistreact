@@ -4,26 +4,16 @@ import {Link} from 'react-router-dom';
 
 
 
- const Header = () =>{
+ const Header = () => {
 
 
 
 
- render(){
-
-
-
-    return(
-        <header>
-            <Link to="/">Music DB</Link>
-        </header>
+ return(
+          <header>
+              <Link to="/">Music DB</Link>
+          </header>
     )
  }
-
-
-
-
-}
-
 
 export default Header;
