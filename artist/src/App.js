@@ -3,6 +3,7 @@ import Artist from './Components/Artist';
 import axios from 'axios';
 import Header from './Components/Header'
 import Banner from './Components/Banner';
+import ArtistList from './Components/ArtistList'
 
 
 class Home extends Component {
@@ -33,12 +34,13 @@ class Home extends Component {
 
 
   return(
-     <div>
+     <>
        <Header />
        <Banner />
+       <ArtistList/>
      
 
-     </div>
+     </>
   )
 
 
