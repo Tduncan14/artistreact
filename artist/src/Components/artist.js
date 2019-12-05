@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
+import axios from 'axios';
 
 
+const url = 'http://localhost:3004/artists/';
 
 class Artist extends Component {
     
@@ -8,21 +10,28 @@ class Artist extends Component {
       super(props)
 
       this.state={
-          artist:this.props.artist
+          artist:''
       }
     }
 
+     componentDidMount(){
 
+      axios.get(`${url}/${this.props.match.params.id}`)
+      .then(response =>
+        console.log(response.data))
+      .catch(err => console.log(err))
 
+     }
+
+    
     render(){
+        console.log(this.state.artist)
 
 
 
         return(
             <div>
-                {
-                    
-                }
+                hello
             </div>
         )
     }

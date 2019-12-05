@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 
 
+
+
 const ArtistList = ({artists}) => {
 
 
@@ -16,9 +18,11 @@ const ArtistList = ({artists}) => {
             to={`/artist/${art.id}`}
             className="artist_item"
             style={{
-                background:`url('/images/covers/${art.cover}.jpg')`
+                background:`url('/images/covers/${art.cover}.jpg') no-repeat`
             }}>
-                what
+                <div>
+                    {art.name}
+                </div>
                 </Link>
 
        </>

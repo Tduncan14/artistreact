@@ -35,7 +35,7 @@ class Home extends Component {
 
   return(
      <>
-       <Header />
+     
        <Banner />
        <ArtistList artists={this.state.artists}/>
      
