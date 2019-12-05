@@ -37,7 +37,7 @@ class Home extends Component {
      <>
        <Header />
        <Banner />
-       <ArtistList/>
+       <ArtistList artists={this.state.artists}/>
      
 
      </>
