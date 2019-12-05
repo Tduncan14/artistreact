@@ -46,6 +46,7 @@ class Artist extends Component {
                    {artist.bio}
                  </div>
                </div>
+               <Album/>
              </div>
 
             </>
