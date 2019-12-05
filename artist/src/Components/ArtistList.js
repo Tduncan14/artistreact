@@ -16,7 +16,7 @@ const ArtistList = ({artists}) => {
             to={`/artist/${art.id}`}
             className="artist_item"
             style={{
-                background:`url('/images/covers/${art.cover}'.jpg)`
+                background:`url('/images/covers/${art.cover}.jpg')`
             }}>
                 what
                 </Link>
