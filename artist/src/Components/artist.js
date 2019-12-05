@@ -27,7 +27,7 @@ class Artist extends Component {
     render(){
         console.log(this.state.artist)
 
-
+       let {artist} = this.state
 
         return(
             <>
@@ -39,6 +39,12 @@ class Artist extends Component {
                    }>
 
                    </span>
+               </div>
+               <div className="bio">
+                 <h3>{artist.name}</h3>
+                 <div className="bio_text">
+                   {artist.bio}
+                 </div>
                </div>
              </div>
 
