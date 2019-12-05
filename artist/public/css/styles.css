@@ -58,14 +58,12 @@ a {
     flex: 1 0 21%; /* explanation below */
     margin: 5px;
     background-color: blue;
-
     display: block;
     height: 290px;
     width:25%;
     background-size: cover!important;
     margin-bottom: 20px;
     position: relative;
-
     color: white;
     font-weight: bold;
     font-size: 1.5em;

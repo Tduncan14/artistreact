@@ -8,22 +8,27 @@ const ArtistList = ({artists}) => {
 
 
 
-   const list = (artist) =>{
+   const list = (artist) =>(
 
     artist ? artist.map(art => (
-        <div>
-          hey
-        </div>
+       <>
+          <Link key={art.id}
+            to={`/artist/${art.id}`}
+            className="artist_item"
+            style={{
+                background:`url('/images/covers/${art.cover}'.jpg)`
+            }}>
+                what
+                </Link>
 
+       </>
     )) : (
         <div>
          <h1>Loading</h1>
         </div>
     )
-
-
-   }
-
+   )
+   
 
     return(
         <div className="artists_list">
